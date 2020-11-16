@@ -1,0 +1,5 @@
+ngrok.yml
+TeamsAppManifest/*.zip
+appsettings.Development.json
+bin/**
+obj/**

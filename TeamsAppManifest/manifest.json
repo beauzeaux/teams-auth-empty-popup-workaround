@@ -1,0 +1,59 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.5/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.5",
+  "version": "1.0.0",
+  "id": "<< MICROSOFT APP ID >>",
+  "packageName": "com.microsoft.teams.sample",
+  "developer": {
+    "name": "Microsoft",
+    "websiteUrl": "https://dev.botframework.com",
+    "privacyUrl": "https://dev.botframework.com",
+    "termsOfUseUrl": "https://dev.botframework.com"
+  },
+  "icons": {
+    "color": "icon-color.png",
+    "outline": "icon-outline.png"
+  },
+  "name": {
+    "short": "ME Command Auth Tests",
+    "full": "ME Command Auth Tests"
+  },
+  "description": {
+    "short": "ME Command Auth Tests",
+    "full": "ME Command Auth Tests"
+  },
+  "accentColor": "#FFFFFF",
+  "composeExtensions": [
+    {
+        "botId": "<< MICROSOFT APP ID >>",
+        "canUpdateConfiguration": false,
+        "commands": [
+            {
+                "id": "Command",
+                "type": "action",
+                "title": "SignIn",
+                "description": "Description",
+                "initialRun": false,
+                "fetchTask": false,
+                "context": [
+                    "compose"
+                ],
+                "taskInfo": {
+                    "title": "Sample Auth Start",
+                    "width": "medium",
+                    "height": "medium",
+                    "url": "https://nibeauli-me-auth-test.ngrok.io/authStart.html"
+                }
+            }
+        ]
+    }
+  ],
+  "permissions": [
+    "identity"
+  ],
+  "validDomains": [
+    "*.githubusercontent.com",
+    "*.ngrok.io",
+    "*.botframework.com"
+  ]
+}

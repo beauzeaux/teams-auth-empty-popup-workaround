@@ -1,0 +1,26 @@
+<html>
+<body>
+    <h1> Please wait while we redirect you.... </h1>
+
+    <script src='https://statics.teams.cdn.office.net/sdk/v1.5.2/js/MicrosoftTeams.min.js'></script>
+
+    <script type="text/javascript">
+
+        document.addEventListener("DOMContentLoaded", function () {
+            // settimeout to demonstrate this works. 
+            setTimeout(() => {
+                console.log('Attempting to submit task')
+                microsoftTeams.initialize(() => {
+                    microsoftTeams.tasks.submitTask("test")
+                });
+            }, 1000)
+        });
+
+    </script>
+        
+    <script type="text/javascript">
+        
+        
+    </script>
+</body>
+</html>
